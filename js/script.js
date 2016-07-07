@@ -71,11 +71,13 @@ var Cat = new Animal("Feline", "Siamese", "White", "23in", "short-hair");
 for (x in Cat) {
     if (Cat.hasOwnProperty(x)) {
         window.console.log(x);
+    } else {
+        window.console.log(null);
     }
 }*/
 
     //8 Now, create a public method called speak. Within the speak method you will use a conditional to check the type of Animal being created. If it’s a dog, return “The <color> dog is barking!” If it’s a cat return “The <color> cat is meowing!” instead. Call that method after the Animal class has been instantiated.
-
+/*
 function Animal(type) {
     'use strict';
     this.type = type;
@@ -84,13 +86,36 @@ var Cat = new Animal("Cat");
 
 function speak() {
     'use strict';
-    if (type == "Dog") {
-        window.console.log('The dog is barking!');
-    } else if (type == "Cat") {
-        window.console.log('The cat is meowing!');
-    }
+} --------- not finished ------------*/             
+    
+
+    // Recipe Card
+var recipe = {
+    title: 'Gaucamole',
+    serves: 4,
+    ingredient: [
+        [[3], ['Avocado']],
+        [[1], ['Lime']],
+        [[1], ['Tablespoon Salt']],
+        [[1 / 2], ['Cup Onions']],
+        [[2], ['Diced Tomatoes']],
+        [[1], ['Teaspoon Garlic']],
+        [[1], ['Pinch Ground Pepper']]
+    ]
 }
-speak();
+function displayRecipe(){
+    for (x in recipe) {
+        window.console.log();
+    }
+    
+
+
+
+
+
+
+
+
 
 
 
